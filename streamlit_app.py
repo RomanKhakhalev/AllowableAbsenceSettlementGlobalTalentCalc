@@ -11,6 +11,5 @@ with st.sidebar:
 
 
 
- if ID_file:
-
+if ID_file:
     st.markdown(f'***The upload document was faked with probability 80%***')
