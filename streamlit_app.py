@@ -22,9 +22,9 @@ if ID_file:
         if counter > MAX_COUNTER:
             counter = 0
         with tabs[0]:
-        	 st.image(f'Antler/Photos/{counter}.png', caption="Original", width=None, use_column_width=None)
+        	 st.image(f'Data/Photos/{counter}.png', caption="Original", width=None, use_column_width=None)
         with tabs[1]:
-        	st.image(f'Antler/Results/{counter}.png', caption="Results", width=None, use_column_width=None)
+        	st.image(f'Data/Results/{counter}.png', caption="Results", width=None, use_column_width=None)
     with col2:
         st.markdown("Document validity:86%")
         st.markdown("Photo validity: 33%")
