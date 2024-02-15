@@ -36,7 +36,7 @@ if ID_file:
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
         for i in range(3):
             with tabs[i]:
-                st.header(f"Risk score: :red[{SCORES[i][0]}]%")  
+                st.header(f"Risk score: :red[{SCORES[i][0]}%]")  
                 cols= st.columns(2)
                 with cols[0]:
                     st.image(f'Data/Results/{i}.png', caption="Uploaded image", width = None, use_column_width = None)
