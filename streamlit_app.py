@@ -23,13 +23,12 @@ SCORES = [
          [92,98,8,13],
          [78,7,78,42],
          [7,19,7,5,60]
-
          ]
 
 
 with st.sidebar:
     st.header('Please, enter the initial parameters')
-    ID_file = st.file_uploader('Please upload ID document', type = ['jpg','png','jpeg', 'bmp','tiff'])
+    ID_file = st.file_uploader('Please upload ID document', type = ['jpg','png','jpeg', 'bmp','tiff'], accept_multiple_files = True)
 
 
 if ID_file:
