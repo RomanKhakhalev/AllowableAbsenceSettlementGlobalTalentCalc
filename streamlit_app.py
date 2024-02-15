@@ -13,7 +13,7 @@ with st.sidebar:
 
 if ID_file:
     tabs = st.tabs(['Original Photo','Checking results'])
-    for i in range(1,4):
+    for i in range(3):
         with tabs[i]:
             cols= st.columns(2)
             with cols[0]:
