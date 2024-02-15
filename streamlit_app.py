@@ -21,8 +21,8 @@ with st.sidebar:
 
 if ID_file:
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
-        with tabs[i]:
-            for i in range(3):
+        for i in range(3):
+            with tabs[i]:
                 st.header(f"Total authenticy score: :green[{SCORES[i][0]}]")  
                 cols= st.columns(2)
                 with cols[0]:
