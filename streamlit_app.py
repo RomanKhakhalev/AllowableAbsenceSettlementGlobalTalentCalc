@@ -17,11 +17,14 @@ if ID_file:
     counter += 1
     if counter > MAX_COUNTER:
         counter = 0
-    col1, col2= st.columns(2)
+    
     with col1:
         with tabs[0]:
-             st.image(f'Data/Photos/1.png', caption="Original", width=None, use_column_width=None)
-             st.image(f'Data/Results/1.png', caption="Original", width=None, use_column_width=None)
+            col1, col2= st.columns(2)
+            with col1:
+                st.image(f'Data/Photos/1.png', caption="Original", width=None, use_column_width=None)
+            with col2:
+                st.image(f'Data/Results/1.png', caption="Original", width=None, use_column_width=None)
         with tabs[1]:
              st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
              st.image(f'Data/Results/2.png', caption="Original", width=None, use_column_width=None)
