@@ -1,5 +1,16 @@
 import streamlit as st
 
+
+def formatIt(t):
+    if t<20:
+        result = f":green [{t}%] "
+    else:
+        if t < 80:
+            result = f":yellow [{t}%] "
+        else:
+            result = f":red [{t}%] "
+
+
 st.set_page_config(
     page_title="Super-accurate ID checker for major and most prominent banks",
     page_icon="",
@@ -8,11 +19,12 @@ st.set_page_config(
 
 SCORES = [
          
-         ['10%','30%','50%','60%'],
-         ['100%','360%','50%','60%'],
-         ['108%','308%','50%','60%']
+         [92,98,8,13],
+         [78,7,78,42],
+         [7,19,7,5,60]
 
          ]
+
 
 with st.sidebar:
     st.header('Please, enter the initial parameters')
@@ -29,9 +41,9 @@ if ID_file:
                     st.image(f'Data/Results/{i}.png', caption="Original", width=None, use_column_width=None)
                 with cols[1]:
                     with st.container():
-                        st.subheader(f"Likelihood of image being AI generated: :green [{SCORES[i][1]}]")
-                        st.subheader(f"Likelihood of photo being photoshopped: :green [{SCORES[i][2]}]")    
-                        st.subheader(f"MRZ number incongruence: :green[{SCORES[i][3]}]")     
+                        st.subheader(f"Likelihood of image being AI generated: {formatIt(SCORES[i][1])}")
+                        st.subheader(f"Likelihood of photo being photoshopped: {formatIt(SCORES[i][2])}")    
+                        st.subheader(f"MRZ number incongruence: {formatIt(SCORES[i][3])}")     
                         
         # with tabs[i]:
         #      st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
