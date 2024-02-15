@@ -14,7 +14,7 @@ def formatIt(t):
 
 st.set_page_config(
     page_title="Super-accurate ID checker for major and most prominent banks",
-    page_icon="",
+    page_icon="logo.png",
     layout="wide",
     initial_sidebar_state="expanded")
 
