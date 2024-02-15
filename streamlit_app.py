@@ -30,7 +30,7 @@ with st.sidebar:
     ID_file = st.file_uploader('Please upload ID document', type = ['jpg','png','jpeg', 'bmp','tiff'], accept_multiple_files = True)
 
 
-if ID_file:
+if True:
         st.image('Data/logo.png', caption=None, width = 150, use_column_width = None)
         #st.header('ID checking app')
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
