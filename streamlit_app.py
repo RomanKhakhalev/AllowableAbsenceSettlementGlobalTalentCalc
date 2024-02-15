@@ -1,4 +1,5 @@
-import streamlit as st, pandas as pd, matplotlib as plt
+import streamlit as st
+
 st.set_page_config(
     page_title="Super-accurate ID checker for major and most prominent banks",
     page_icon="",
