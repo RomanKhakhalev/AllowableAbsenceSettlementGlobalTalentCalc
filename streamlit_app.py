@@ -16,19 +16,19 @@ counter = 0
 MAX_COUNTER = 2
 if ID_file:
     counter += 1
-    
-    col1, col2= st.columns(2)
-    with col1:
-        if counter > MAX_COUNTER:
-            counter = 0
-        with tabs[0]:
-        	 st.header('Please, enter the initial parameters')
-             #st.image(f'Data/Photos/1.png', caption="Original", width=None, use_column_width=None)
-        with tabs[1]:
-        	#t.image(f'Data/Results/{counter}.png', caption="Results", width=None, use_column_width=None)
-    with col2:
-        st.markdown("Document validity:86%")
-        st.markdown("Photo validity: 33%")
+    if counter > MAX_COUNTER:
+        counter = 0
+    # col1, col2= st.columns(2)
+    # with col1:
+
+    with tabs[0]:
+    	 st.header('Please, enter the initial parameters')
+         #st.image(f'Data/Photos/1.png', caption="Original", width=None, use_column_width=None)
+    with tabs[1]:
+    	#t.image(f'Data/Results/{counter}.png', caption="Results", width=None, use_column_width=None)
+    # with col2:
+    #     st.markdown("Document validity:86%")
+    #     st.markdown("Photo validity: 33%")
 
 # with st.container:
 #     st.header(f":green[*You have not exceed the allowance on number of days outside UK*]")
