@@ -6,7 +6,7 @@ def formatIt(t):
         result = f":green[{t}%]"
     else:
         if t < 80:
-            result = f":yellow[{t}%]"
+            result = f":blue[{t}%]"
         else:
             result = f":red[{t}%]"
     return result
