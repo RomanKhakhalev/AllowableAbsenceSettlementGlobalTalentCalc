@@ -3,12 +3,12 @@ import streamlit as st
 
 def formatIt(t):
     if t<20:
-        result = f":green [{t}%] "
+        result = f":green [{t}%]"
     else:
         if t < 80:
-            result = f":yellow [{t}%] "
+            result = f":yellow [{t}%]"
         else:
-            result = f":red [{t}%] "
+            result = f":red [{t}%]"
 
 
 st.set_page_config(
@@ -35,7 +35,7 @@ if ID_file:
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
         for i in range(3):
             with tabs[i]:
-                st.header(f"Total authenticy score: :green[{SCORES[i][0]}]")  
+                st.header(f"Total authenticy score: {formatIt(SCORES[i][0])}")  
                 cols= st.columns(2)
                 with cols[0]:
                     st.image(f'Data/Results/{i}.png', caption="Original", width=None, use_column_width=None)
