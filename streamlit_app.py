@@ -31,8 +31,8 @@ with st.sidebar:
 
 
 if ID_file:
-        #st.image('logo.png', caption="Uploaded image", width = None, use_column_width = None))
-        st.header('ID checking app')
+        st.image('logo.png', caption=None, width = None, use_column_width = None)
+        #st.header('ID checking app')
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
         for i in range(3):
             with tabs[i]:
