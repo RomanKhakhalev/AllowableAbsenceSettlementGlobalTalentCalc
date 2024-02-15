@@ -19,7 +19,7 @@ if ID_file:
             with cols[0]:
                 st.image(f'Data/Results/{i}.png', caption="Original", width=None, use_column_width=None)
             with cols[1]:
-                with st.container:
+                with st.container():
                         st.markdown("Document validity:86%")
                         st.markdown("Photo validity: 33%")
         # with tabs[i]:
