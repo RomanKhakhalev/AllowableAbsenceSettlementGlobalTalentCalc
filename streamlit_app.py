@@ -23,8 +23,8 @@ if ID_file:
     	 #st.markdown('Please, enter the initial parameters')
          st.image(f'Data/Photos/1.png', caption="Original", width=None, use_column_width=None)
     with tabs[1]:
-        st.markdown('Please, enter the initial parameters')
-    	#t.image(f'Data/Results/{counter}.png', caption="Results", width=None, use_column_width=None)
+        #st.markdown('Please, enter the initial parameters')
+    	st.image(f'Data/Results/{counter}.png', caption="Results", width=None, use_column_width=None)
     # with col2:
     #     st.markdown("Document validity:86%")
     #     st.markdown("Photo validity: 33%")
