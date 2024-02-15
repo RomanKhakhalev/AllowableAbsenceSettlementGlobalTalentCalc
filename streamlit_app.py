@@ -20,9 +20,9 @@ if ID_file:
                 st.image(f'Data/Results/{i}.png', caption="Original", width=None, use_column_width=None)
             with cols[1]:
                 with st.container():
-                    st.markdown("Likelihood of image being AI generated: :green[30%]")
-                    st.markdown("Likelihood of photo being photoshopped: :green[30%]")    
-                    st.markdown("MRZ number incongruence: :green[30%]")     
+                    st.subheader("Likelihood of image being AI generated: :green[30%]")
+                    st.subheader("Likelihood of photo being photoshopped: :green[30%]")    
+                    st.subheader("MRZ number incongruence: :green[30%]")     
                     
         # with tabs[i]:
         #      st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
@@ -30,6 +30,5 @@ if ID_file:
 
 
 with st.container():    
-     s = f"<p style='font-size:20px;'>:green[Likelihood of the photo being AI generated 50%]</p>"
-     st.markdown(s, unsafe_allow_html=True)  
+     st.header("Total authenticy score: :green[30]")  
      
