@@ -19,10 +19,10 @@ if ID_file:
 #    col1, col2= st.columns(2)
 #    with col1:
     with tabs[0]:
-    	 st.header('Please, enter the initial parameters')
+    	 st.markdown('Please, enter the initial parameters')
          #st.image(f'Data/Photos/1.png', caption="Original", width=None, use_column_width=None)
     with tabs[1]:
-        st.header('Please, enter the initial parameters')
+        st.markdown('Please, enter the initial parameters')
     	#t.image(f'Data/Results/{counter}.png', caption="Results", width=None, use_column_width=None)
     # with col2:
     #     st.markdown("Document validity:86%")
