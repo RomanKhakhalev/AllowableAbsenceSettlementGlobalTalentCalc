@@ -31,6 +31,7 @@ with st.sidebar:
 
 
 if ID_file:
+    st.subheader(f"ID Checking app")
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
         for i in range(3):
             with tabs[i]:
