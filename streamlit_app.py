@@ -18,19 +18,18 @@ if ID_file:
     if counter > MAX_COUNTER:
         counter = 0
     
-    with col1:
-        with tabs[0]:
-            cols= st.columns(2)
-            with cols[0]:
-                st.image(f'Data/Photos/1.png', caption="Original", width=None, use_column_width=None)
-            with cols[1]:
-                st.image(f'Data/Results/1.png', caption="Original", width=None, use_column_width=None)
-        with tabs[1]:
-             st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
-             st.image(f'Data/Results/2.png', caption="Original", width=None, use_column_width=None)
-    with col2:
-        st.markdown("Document validity:86%")
-        st.markdown("Photo validity: 33%")
+    with tabs[0]:
+        cols= st.columns(2)
+        with cols[0]:
+            st.image(f'Data/Photos/1.png', caption="Original", width=None, use_column_width=None)
+        with cols[1]:
+            st.image(f'Data/Results/1.png', caption="Original", width=None, use_column_width=None)
+    with tabs[1]:
+         st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
+         st.image(f'Data/Results/2.png', caption="Original", width=None, use_column_width=None)
+    # with col2:
+    #     st.markdown("Document validity:86%")
+    #     st.markdown("Photo validity: 33%")
 
     # with st.container:
 #     st.header(f":green[*You have not exceed the allowance on number of days outside UK*]")
