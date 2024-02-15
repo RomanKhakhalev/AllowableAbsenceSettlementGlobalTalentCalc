@@ -10,9 +10,11 @@ with st.sidebar:
     st.header('Please, enter the initial parameters')
     ID_file = st.file_uploader('Please upload ID document', type = ['jpg','png','jpeg', 'bmp','tiff'])
 
+with st.container():    
+     st.header("Total authenticy score: :green[30]")  
 
 if ID_file:
-    tabs = st.tabs(['First sample','Second sample', 'First sample'])
+    tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
     for i in range(3):
         with tabs[i]:
             cols= st.columns(2)
@@ -29,6 +31,5 @@ if ID_file:
         #      st.image(f'Data/Results/2.png', caption="Original", width=None, use_column_width=None)
 
 
-with st.container():    
-     st.header("Total authenticy score: :green[30]")  
+
      
