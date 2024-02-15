@@ -1,6 +1,6 @@
 import streamlit as st
 
-print ("I'm fine")
+st.markdown("Photo validity: 33%")
 # st.set_page_config(
 #     page_title="Super-accurate ID checker for major and most prominent banks",
 #     page_icon="",
@@ -32,5 +32,4 @@ print ("I'm fine")
 # with st.container:
 #     st.header(f":green[*You have not exceed the allowance on number of days outside UK*]")
 
-# 
-#
+#  ###
