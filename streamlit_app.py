@@ -29,9 +29,10 @@ with st.sidebar:
     st.header('Please, enter the initial parameters')
     ID_file = st.file_uploader('Please upload ID document', type = ['jpg','png','jpeg', 'bmp','tiff'], accept_multiple_files = True)
 
-#st.image(f'logo.png')
+
 if ID_file:
-        st.header('ID checking app')
+        st.image('logo.png')
+        #st.header('ID checking app')
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
         for i in range(3):
             with tabs[i]:
