@@ -9,6 +9,7 @@ def formatIt(t):
             result = f":yellow [{t}%]"
         else:
             result = f":red [{t}%]"
+    return result
 
 
 st.set_page_config(
