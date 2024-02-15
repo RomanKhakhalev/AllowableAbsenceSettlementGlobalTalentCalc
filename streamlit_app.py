@@ -12,7 +12,7 @@ with st.sidebar:
 
 
 if ID_file:
-    tabs = st.tabs(['Original Photo','Checking results'])
+    tabs = st.tabs(['First sample','Second sample', 'First sample'])
     for i in range(3):
         with tabs[i]:
             cols= st.columns(2)
@@ -20,9 +20,9 @@ if ID_file:
                 st.image(f'Data/Photos/{i}.png', caption="Original", width=None, use_column_width=None)
             with cols[1]:
                 st.image(f'Data/Results/{i}.png', caption="Original", width=None, use_column_width=None)
-        with tabs[1]:
-             st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
-             st.image(f'Data/Results/2.png', caption="Original", width=None, use_column_width=None)
+        # with tabs[i]:
+        #      st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
+        #      st.image(f'Data/Results/2.png', caption="Original", width=None, use_column_width=None)
     #     st.markdown("Document validity:86%")
     #     st.markdown("Photo validity: 33%")
 
