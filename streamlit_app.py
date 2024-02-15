@@ -13,6 +13,7 @@ with st.sidebar:
 counter = 0
 MAX_COUNTER = 2
 if ID_file:
+    tabs= st.tabs(['Original Photo','Checking results'])
     counter += 1
     if counter > MAX_COUNTER:
         counter = 0
