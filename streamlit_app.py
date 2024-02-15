@@ -20,19 +20,18 @@ with st.sidebar:
 
 
 if ID_file:
-    for i in range(3):
-        with st.container():    
-           st.header(f"Total authenticy score: :green[{SCORES[i][0]}]")  
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
         with tabs[i]:
-            cols= st.columns(2)
-            with cols[0]:
-                st.image(f'Data/Results/{i}.png', caption="Original", width=None, use_column_width=None)
-            with cols[1]:
-                with st.container():
-                    st.subheader(f"Likelihood of image being AI generated: :green [{SCORES[i][1]}]")
-                    st.subheader(f"Likelihood of photo being photoshopped: :green [{SCORES[i][2]}]")    
-                    st.subheader(f"MRZ number incongruence: :green[{SCORES[i][3]}]")     
+            for i in range(3):
+                st.header(f"Total authenticy score: :green[{SCORES[i][0]}]")  
+                cols= st.columns(2)
+                with cols[0]:
+                    st.image(f'Data/Results/{i}.png', caption="Original", width=None, use_column_width=None)
+                with cols[1]:
+                    with st.container():
+                        st.subheader(f"Likelihood of image being AI generated: :green [{SCORES[i][1]}]")
+                        st.subheader(f"Likelihood of photo being photoshopped: :green [{SCORES[i][2]}]")    
+                        st.subheader(f"MRZ number incongruence: :green[{SCORES[i][3]}]")     
                         
         # with tabs[i]:
         #      st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
