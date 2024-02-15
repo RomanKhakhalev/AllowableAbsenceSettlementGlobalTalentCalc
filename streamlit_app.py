@@ -9,8 +9,8 @@ st.set_page_config(
 SCORES = [
          
          ['10%','30%','50%','60%'],
-         ['10%','30%','50%','60%'],
-         ['10%','30%','50%','60%']
+         ['100%','360%','50%','60%'],
+         ['108%','308%','50%','60%']
 
          ]
 
@@ -30,9 +30,9 @@ if ID_file:
                 st.image(f'Data/Results/{i}.png', caption="Original", width=None, use_column_width=None)
             with cols[1]:
                 with st.container():
-                    st.subheader("Likelihood of image being AI generated: :green[30%]")
-                    st.subheader("Likelihood of photo being photoshopped: :green[30%]")    
-                    st.subheader("MRZ number incongruence: :green[30%]")     
+                    st.subheader(f"Likelihood of image being AI generated: :green [{SCORES[i][1]}]")
+                    st.subheader(f"Likelihood of photo being photoshopped: :green [{SCORES[i][2]}]")    
+                    st.subheader(f"MRZ number incongruence: :green[{SCORES[i][3]}]")     
                         
         # with tabs[i]:
         #      st.image(f'Data/Photos/2.png', caption="Original", width=None, use_column_width=None)
