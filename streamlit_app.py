@@ -27,5 +27,5 @@ if ID_file:
         #      st.image(f'Data/Results/2.png', caption="Original", width=None, use_column_width=None)
 
 
-with st.container:
+with st.container():
      st.header(f"*Likelihood of the photo being AI generated :green[50%]*]")
