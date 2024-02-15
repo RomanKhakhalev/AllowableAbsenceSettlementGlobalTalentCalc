@@ -29,7 +29,7 @@ if ID_file:
         st.markdown("Document validity:86%")
         st.markdown("Photo validity: 33%")
 
-with st.container:
-    st.header(f":green[*You have not exceed the allowance on number of days outside UK*]")
+# with st.container:
+#     st.header(f":green[*You have not exceed the allowance on number of days outside UK*]")
 
  ###
