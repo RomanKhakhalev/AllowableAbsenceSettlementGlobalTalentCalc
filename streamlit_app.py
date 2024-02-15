@@ -19,9 +19,9 @@ st.set_page_config(
     initial_sidebar_state="expanded")
 
 SCORES = [
-         [20,98,8,13],
-         [67,7,78,42],
-         [7,19,93,5,60]
+         [80,98,8,13],
+         [71,7,78,42],
+         [96,19,93,5,60]
          ]
 
 
@@ -36,7 +36,7 @@ if ID_file:
         tabs = st.tabs(['Lois Griffin','Steven Bell', 'Elon Musk'])
         for i in range(3):
             with tabs[i]:
-                st.header(f"Total authenticy score: {SCORES[i][0]} %")  
+                st.header(f"Risk score: :red[{SCORES[i][0]}]%")  
                 cols= st.columns(2)
                 with cols[0]:
                     st.image(f'Data/Results/{i}.png', caption="Uploaded image", width = None, use_column_width = None)
